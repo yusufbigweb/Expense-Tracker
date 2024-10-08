@@ -13,7 +13,9 @@ A simple and lightweight Expense Tracker built using HTML, CSS, and JavaScript. 
 
 #### Getting Started:
 1. Clone the repository.
+
    ```bash
    git clone https://github.com/YusufShaikh/expense-tracker.git
    ```
-2. Open the `index.html` file in your browser to start tracking your expenses.
+   
+3. Open the `index.html` file in your browser to start tracking your expenses.
