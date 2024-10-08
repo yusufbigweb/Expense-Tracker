@@ -8,3 +8,64 @@ body, html{
     width: 100%;
     height: 100%;
 }
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    scroll-behavior: smooth;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: green; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(104, 165, 104); 
+  }
+
+.root{
+    width: fit-content;
+}
+
+.t-inc{
+    color: green;
+}
+.vertical{
+    border-left: 4px solid green;
+    height: 100px;
+}
+.t-exp{
+    color: red;
+}
+
+.total{
+    display: flex;
+   align-items: center;
+   gap: 30px;
+}
+.total-balance{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 25rem;
+    margin: auto;
+    padding: 3%;
+    margin-top: 40px;
+}
+.balance-heading{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.balance-heading i{
+    color: green;
+}
