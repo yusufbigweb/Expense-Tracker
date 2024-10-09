@@ -9,7 +9,7 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
     <title>Expense Tracker</title>
 </head>
 
@@ -22,36 +22,79 @@
     <!-- Summery Total Balance -->
 
     <div class="total-balance">
-        
-        <h1 class="balance-heading"><i class="fa-solid fa-circle-check"></i> Balance: <span id="updateBal"> 1000</span></h1>
-    <br>
 
-    <div class="total">
+        <h1 class="balance-heading"><i class="fa-solid fa-circle-check"></i> Balance: <span id="updateBal"> 1000</span>
+        </h1>
+        <br>
 
-        <div class="showIncome">
-            Total Income:
-            <div>
-            <h2 class="t-inc" id="updatedInc">
-                5600
-            </h2>
+        <div class="total">
+
+            <div class="showIncome">
+                Total Income:
+                <div>
+                    <h2 class="t-inc" id="updatedInc">
+                        5600
+                    </h2>
+                </div>
+            </div>
+
+            <div class="vertical"></div>
+
+            <div class="totalExp">
+                Total Expense:
+                <div>
+                    <h2 class="t-exp" id="updatedExp"> 12000 </h2>
+                </div>
+            </div>
+
+
         </div>
-        </div>
-
-        <div class="vertical"></div>
-
-        <div class="totalExp">
-            Total Expense:
-            <div>
-            <h2 class="t-exp" id="updatedExp"> 12000 </h2>
-        </div>
-        </div>
-
-
     </div>
-</div>
+
+    <!-- Expense Table -->
+
+
+    <div class="root">
+        <div class="items">
+            <h2 style="margin-bottom: 25px;">Expense </h2>
+            <table id="table">
+                <tr>
+                    <th>S.no.</th>
+                    <th>Name</th>
+                    <th>Amount</th>
+                    <th>Type</th>
+                    <th>Delete</th>
+                </tr>
+            </table>
+        </div>
+        <div class="vertical-2"></div>
+
+        <!-- Income Management -->
+
+        <div id="new">
+            <h2 style="margin-bottom: 25px;">Add New </h2>
+            <div class="input">
+                <div class="inputItem">
+                    <p style="width: 9rem;">Entry type: </p>
+                    <select id="itemType">
+                        <option value="0">Expense</option>
+                        <option value="1">Income</option>
+                    </select>
+                </div>
+                <div class="inputItem">
+                    <p style="width: 9rem;">Name:</p>
+                    <input type="text" id="name" value="" placeholder="name">
+                </div>
+                <div class="inputItem">
+                    <p style="width: 9rem;">Amount:</p>
+                    <input type="text" name="mod" id="amount" value="" placeholder="amount">
+                </div>
+            </div>
+            <button>Add Expense</button>
+        </div>
+    </div>
 
     <!-- End -->
-
 
 </body>
 
